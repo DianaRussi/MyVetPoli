@@ -104,3 +104,54 @@ header {
 .nav-link:hover{
     color: #3bcc75;
 }
+
+.cita{
+    font-size: 1.1rem;
+    background-color: green;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    border-radius: .4rem;
+}
+
+.cita:hover,
+.cita:focus{
+    color: #fff;
+    background-color: #3bcc75;
+}
+main{
+    height: 500px;
+}
+/*footer*/
+footer{
+    padding: 7.9rem 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.footer-content{
+    overflow: hidden;
+}
+.footer-content h4{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.social-icons{
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+.social-icons i{
+    font-size: 2rem;
+    color: #3bcc75;
+    padding:  .8rem 2rem;
+}
+.social-icons i:hover,
+.social-icons i:focus{
+    color: #ffc845;
+}
