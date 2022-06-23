@@ -109,44 +109,121 @@ html {
 }
 
 
+/**Nuestros proyectod**/
+.blog{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/fondo1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
+}
+
+.blog.deg-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.blog .ejeZproject{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.blog .container-project{
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.blog .container-project .project-title{
+  border: 2px solid #fff;
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.blog .container-project .project-title h2{
+  font-size: 40px;
+  color: #fff;
+  font-weight: normal;
+}
+.blog .container-project .project-title hr{
+  background: #fff;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.blog .container-project .blog-gallery{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  padding-bottom: 100px;
+} 
+
+.blog .container-project .blog-gallery img{
+  width: calc(30% - 10px);
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/**servicios**/
 .servicios{
   width: 100%;
-  margin-top: 120px;
+  margin-top:120px;
+}
+.servicios .servicios-title{
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
 
-.servicios .info-container{
-  width: 80%;
+.servicios .servicios-title h2{
+  font-size: 50px;
+  color: black;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.servicios .servicios-title hr{
+  width: 60%;
   margin: auto;
+  height: 2px;
+  background: black;
+  border: none;
+}
+
+.servicios .box-servicios{
+  width: 90%;
+  margin: 80px auto;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.servicios .info-container h1{
-  font-size: 50px;
-  font-weight: 400;
-  color: var(--black);
-  text-align: center;
-  margin-bottom: 20px;
+
+.servicios .box-servicios .card-servicios{
+  width: 45%;
+  margin: 30px;
 }
 
-.servicios .info-container p{
-  text-align: center;
-  font-size: 17px;
-  color: var(--black);
-  line-height: 35px;
-  margin: 10px 0px;
-}
-
-.servicios .info-container .servicios-gallery{
+.servicios .box-servicios .card-servicios .card-img{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 50px 0px;
+  align-items: center;
 }
 
-.servicios .info-container .servicios-gallery img{
-  width: calc(33.33% - 10px);
+.servicios .box-servicios .card-servicios .card-img img{
   height: 300px;
   object-fit: cover;
   margin: 10px 10px;
@@ -154,6 +231,35 @@ html {
   cursor: pointer;
 }
 
+.servicios .box-servicios .card-servicios .servicios-text{
+  width: 100%;
+  border: 2px solid #3bcc75;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 200ms;
+}
+.servicios .box-servicios .card-servicios .servicios-text h4{
+  color: black;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: 27px;
+  margin-bottom: 20px;
+  transition: 200ms;
+}
+
+.servicios .box-servicios .card-servicios .servicios-text p{
+  font-size: 19px;
+  color: black;
+  text-align: justify;
+  line-height: 35px;
+  transition: 200ms;
+}
+
+.servicios .box-servicios .card-servicios .servicios-text:hover{
+  border: 2px solid #08d9d6;
+}
 
 footer{
     padding: 7.9rem 0;
@@ -161,6 +267,7 @@ footer{
     color: #fff;
     text-align: center;
     position: relative;
+    width: 100%;
 }
 .footer-content{
     overflow: hidden;
@@ -188,3 +295,4 @@ footer{
 .social-icons i:focus{
     color: #08d9d6;
 }
+
