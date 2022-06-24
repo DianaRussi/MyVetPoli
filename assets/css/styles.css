@@ -32,7 +32,7 @@ html {
   z-index: 999;
 }
 
-.menu .logo-box h1 a{
+.logo-box h1 a{
   text-decoration: none;
   font-size: 35px;
   font-weight: 400;
@@ -40,20 +40,20 @@ html {
   margin: 20px;
 }
 
-.menu .list-container{
+.list-container{
   margin-right: 20px;
 }
 
-.menu .list-container .lists{
+.lists{
   display: flex;
   justify-content: space-around;
 }
 
-.menu .list-container .lists li{
+.lists li{
   list-style: none;
 }
 
-.menu .list-container .lists li a{
+.lists li a{
   text-decoration: none;
   margin: 0 10px;
   padding: 8px;
@@ -63,8 +63,8 @@ html {
   transition: 0.3s;
 }
 
-.menu .list-container .lists li a.activo,
-.menu .list-container .lists li a:hover{
+.lists li a.activo,
+.lists li a:hover{
    background: #3bcc75;
    color: #fff
 }
@@ -81,7 +81,7 @@ html {
   background-size: cover;
 }
 
-.img-header .welcome{
+.welcome{
   position: absolute;
   top: 0;
   left: 0;
@@ -94,13 +94,13 @@ html {
   flex-direction: column;
 }
 
-.img-header .welcome h1{
+.welcome h1{
   font-size: 50px;
   color: #fff;
   font-weight: 200;
 }
 
-.img-header .welcome hr{
+.welcome hr{
   width: 400px;
   height: 2px;
   background: #fff;
@@ -109,7 +109,7 @@ html {
 }
 
 
-/**Nuestros proyectod**/
+/**Galeria**/
 .blog{
   position: relative;
   width: 100%;
@@ -121,7 +121,7 @@ html {
   margin-top: 100px;
 }
 
-.blog.deg-background{
+.deg-background{
   position: absolute;
   top: 0;
   left: 0;
@@ -129,37 +129,37 @@ html {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
 }
-.blog .ejeZproject{
+.ejeZproject{
   position: relative;
   width: 100%;
   height: 100%;
 }
-.blog .container-project{
+.container-project{
   width: 90%;
   margin: auto;
   padding-top: 100px;
 }
 
-.blog .container-project .project-title{
-  border: 2px solid #fff;
+.project-title{
+  border: 2px solid #08d9d6;
   padding: 10px;
   text-align: center;
   width: 50%;
   margin: auto;
 }
 
-.blog .container-project .project-title h2{
+.project-title h2{
   font-size: 40px;
   color: #fff;
   font-weight: normal;
 }
-.blog .container-project .project-title hr{
+.project-title hr{
   background: #fff;
   width: 50%;
   margin: 10px auto;
 }
 
-.blog .container-project .blog-gallery{
+.blog-gallery{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -168,7 +168,7 @@ html {
   padding-bottom: 100px;
 } 
 
-.blog .container-project .blog-gallery img{
+.blog-gallery img{
   width: calc(30% - 10px);
   margin: 10px;
   object-fit: cover;
@@ -181,20 +181,20 @@ html {
   width: 100%;
   margin-top:120px;
 }
-.servicios .servicios-title{
+.servicios-title{
   width: 50%;
   margin: auto;
   text-align: center;
 }
 
-.servicios .servicios-title h2{
+.servicios-title h2{
   font-size: 50px;
   color: black;
   font-weight: normal;
   margin-bottom: 10px;
 }
 
-.servicios .servicios-title hr{
+.servicios-title hr{
   width: 60%;
   margin: auto;
   height: 2px;
@@ -202,7 +202,7 @@ html {
   border: none;
 }
 
-.servicios .box-servicios{
+.box-servicios{
   width: 90%;
   margin: 80px auto;
   display: flex;
@@ -210,20 +210,19 @@ html {
   flex-wrap: wrap;
 }
 
-
-.servicios .box-servicios .card-servicios{
+.card-servicios{
   width: 45%;
   margin: 30px;
 }
 
-.servicios .box-servicios .card-servicios .card-img{
+.card-img{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.servicios .box-servicios .card-servicios .card-img img{
+.card-img img{
   height: 300px;
   object-fit: cover;
   margin: 10px 10px;
@@ -231,7 +230,7 @@ html {
   cursor: pointer;
 }
 
-.servicios .box-servicios .card-servicios .servicios-text{
+.servicios-text{
   width: 100%;
   border: 2px solid #3bcc75;
   margin-top: 30px;
@@ -240,7 +239,7 @@ html {
   cursor: pointer;
   transition: 200ms;
 }
-.servicios .box-servicios .card-servicios .servicios-text h4{
+.servicios-text h4{
   color: black;
   font-weight: normal;
   font-size: 30px;
@@ -249,7 +248,7 @@ html {
   transition: 200ms;
 }
 
-.servicios .box-servicios .card-servicios .servicios-text p{
+.servicios-text p{
   font-size: 19px;
   color: black;
   text-align: justify;
@@ -257,39 +256,99 @@ html {
   transition: 200ms;
 }
 
-.servicios .box-servicios .card-servicios .servicios-text:hover{
+.servicios-text:hover{
   border: 2px solid #08d9d6;
 }
 
-footer{
-    padding: 7.9rem 0;
-    background-color: #121212;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    width: 100%;
+/**footer**/
+.footer{
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+
 }
+
 .footer-content{
-    overflow: hidden;
+  width: 50%;
+  height: 40%;
+  padding-top: 50px;
+  margin: auto;
 }
-.footer-content h4{
-    font-size: 1.9rem;
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 3px;
-    margin-bottom: 3rem;
+
+.footer-title{
+  width: 60%;
+  margin: auto;
+  border: 2px solid #fff;
+  padding: 15px;
+}
+
+.footer-title h2{
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.formulario-content{
+  width: 70%;
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid #3bcc75;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+#formularioContacto{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#formularioContacto label{
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  margin:30px  0px 10px 0px;
+}
+
+#formularioContacto input{
+  width: 90%;
+  height: 35px;
+  margin: auto;
+  border: 2px solid #3bcc75;
+  border-radius: 24px;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  color: black;
+  padding: 20px;
+}
+
+
+#formularioContacto textarea{
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  border: 2px solid #3bcc75;
+  border-radius: 24px;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  color: black;
+  padding: 20px;
 }
 
 .social-icons{
     list-style: none;
-    margin-bottom: 5.4rem;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 .social-icons i{
-    font-size: 2rem;
+    font-size: 30px;
     color: #3bcc75;
-    padding:  .8rem 2rem;
+    padding:  20px;
 }
 .social-icons i:hover,
 .social-icons i:focus{
